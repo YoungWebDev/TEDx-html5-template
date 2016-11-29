@@ -1,0 +1,19 @@
+{
+  "name": "tedxpaderewskiintlschool",
+  "version": "1.0.0",
+  "description": "TEDx website for a friend of mine.",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "TED",
+    "TEDx"
+  ],
+  "author": "Michał Rokita",
+  "license": "MIT"
+}
