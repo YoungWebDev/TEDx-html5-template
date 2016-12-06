@@ -1,11 +1,16 @@
-# TEDx html5 template
+# TEDx bootstrap 4 template
 ## Description
 A friend of mine have asked me to create a website for the event she is organising, it is called TEDx. I’ve done some research according TED standards and come up with this kind of template.  I post it on github, because I did not find any TEDx templates online. Having that said, I want to say that this template and all files in this repo. are on MIT license and you are welcome to copy it, sell it, do whatever you wanna do with it.
 
 ## Frameworks / Libraries used
-* Bootstrap 3
+* Bootstrap 4 (alpha 5)
 * Tether
 * jQuery
+
+## Installation
+* gulp (watch) : for development and livereload
+* gulp build : for a one off development build
+* gulp build --production : for a minified production build
 
 ## License
 Copyright (c) 2016 Michał Rokita
