@@ -1,0 +1,240 @@
+@import colors
+
+body
+  font-family: 'Helvetica Neue', 'Open Sans', sans-serif !important
+  display: flex
+  min-height: 100vh
+  max-width: 100vw
+  overflow-x: hidden
+  flex-direction: column
+  // background: url('../img/bg/sdf.png')
+  // background-repeat: no-repeat
+  // background-attachment: fixed
+  // background-position: center
+  // background-size: cover
+  font-weight: 300
+  background: $white
+
+#main-content
+  flex: 1
+
+.bg-ted-black
+  // background: rgba($ted-black-2, .7)
+
+.navbar
+  border-radius: 0
+  min-height: 70px
+  border-top: 5px solid $ted-red
+  border-bottom: 1px solid rgba($ted-black-font, .4)
+    
+  .navbar-brand 
+
+    @media screen and (max-width: 991px)
+      text-align: center
+      // margin-top: -50px
+      // z-index: 10000
+      // opacity: 1 !important
+      // display: block !important
+  
+    > img
+      max-width: 430px
+      padding-top: 5px
+
+      @media screen and (max-width: 430px)
+        width: 100%
+
+
+.navbar-dark > .navbar-toggler
+  color: $white
+  border-color: rgba($ted-black, .8)
+  border-radius: 0
+  margin-top: 6px
+  background-image: url('../img/toggler.svg')
+
+a.nav-link
+  line-height: 71px
+  font-size: 1.1rem
+  padding: 0 15px
+  font-weight: 400
+  color: $ted-black !important
+
+  @media screen and (max-width: 991px)
+    text-align: center
+
+.form-inline.float-lg-right
+  line-height: 60px
+  padding-top: 10px
+
+  @media screen and (max-width: 991px)
+    text-align: center
+
+  > button
+    color: rgba(lighten($ted-red-logo, 5), .8)
+    border-color: rgba(lighten($ted-red-logo, 5), .8)
+    font-weight: 300
+    color: $white
+    background: rgba($ted-red, .9)
+    border-color: $ted-red
+    border-radius: 0
+
+    display: none
+    
+    @media screen and (max-width: 400px)
+      text-align: center
+
+    &:hover
+      color: $white
+      background: rgba($ted-red, .9)
+      border-color: $ted-red
+
+footer
+  height: 100px
+  background: rgba($ted-black-2, .95)
+  color: darken($white, 10)
+  padding: 0 40px
+  line-height: 100px
+
+  @media screen and (max-width: 700px)
+    text-align: center
+    padding: 0
+
+  p
+    display: inline-block
+    margin-bottom: 0
+
+    @media screen and (max-width: 777px)
+      font-size: .9rem
+
+    @media screen and (max-width: 700px)
+      display: block
+      height: 50px
+      margin-top: -16px
+
+    @media screen and (max-width: 777px)
+      font-size: .75rem
+
+  @media screen and (min-width: 701px)
+
+    p:last-child
+      float: right
+
+#main-content
+
+  .header
+    margin-top: 80px
+    text-align: center
+
+    @media screen and (max-width: 900px)
+      margin-top: 40px
+    
+
+    h1, h2, h3
+      font-weight: 200
+    
+    h1
+      font-size: 45px
+      padding-bottom: 10px
+
+      @media screen and (max-width: 900px)
+        font-size: 40px
+      
+      @media screen and (max-width: 700px)
+        font-size: 35px
+
+      @media screen and (max-width: 600px)
+        font-size: 30px
+      
+      @media screen and (max-width: 550px)
+        font-size: 27px
+
+    h2
+      font-size: 25px
+
+      @media screen and (max-width: 900px)
+        font-size: 20px
+      
+      @media screen and (max-width: 700px)
+        font-size: 18px
+
+      @media screen and (max-width: 600px)
+        font-size: 17px
+      
+      @media screen and (max-width: 550px)
+        font-size: 17px
+
+  .photo 
+    margin-top: 40px
+    text-align: center
+
+    > img
+      height: 300px
+      border-radius: 2px
+
+  .buttons
+    margin-top: 40px
+    margin-bottom: 60px
+    text-align: center
+
+    > button.btn
+      background: $ted-red
+      color: darken($white, 5)
+      border-radius: 1px
+      height: 60px
+      width: calc(50% - 4px)
+      font-size: 20px
+
+      @media screen and (max-width: 768px)
+        font-size: 18px
+
+      @media screen and (max-width: 510px)
+        font-size: 16px
+
+      @media screen and (max-width: 475px)
+        font-size: 20px
+        width: 100%
+        height: 80px
+
+        &:last-child
+          margin-top: 15px
+
+      &:hover
+        color: $white
+        background: rgba($ted-red, .9)
+        border-color: $ted-red
+
+
+//   > div
+//     background: rgba($ted-black-2, .8)
+//     text-align: center
+//     color: $white
+//     font-size: 4vw
+//     font-weight: 300
+//     margin-top: calc(50vh - 200px)
+
+//     .sign-up
+//       background: rgba($white, .8)
+//       font-weight: 600
+//       padding: 30px
+//       color: #dddddd
+//       border: 10px solid $ted-black
+//       border-radius: 2px
+//       box-sizing: border-box
+
+
+// .c
+//   height: 100vh
+//   display: none
+//   width: 100vw
+//   position: fixed
+//   z-index: -2
+//   background: rgba($ted-black, .1)
+
+
+.link
+  text-decoration: none
+  color: $ted-red
+  font-weight: bold
+
+  &:hover
+    color: $ted-red-logo
+    text-decoration: none
