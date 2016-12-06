@@ -7,7 +7,15 @@ A friend of mine have asked me to create a website for the event she is organisi
 * Tether
 * jQuery
 
+## Requirements
+* npm
+
 ## Installation
+Run command `npm install`.
+If you occur any errors, try `sudo npm install` (OSX)
+
+
+## Usage
 * gulp (watch) : for development and livereload
 * gulp build : for a one off development build
 * gulp build --production : for a minified production build
