@@ -6,6 +6,7 @@ A friend of mine have asked me to create a website for the event she is organisi
 * Bootstrap 4 (alpha 5)
 * Tether
 * jQuery
+* Aload
 
 ## Requirements
 * npm

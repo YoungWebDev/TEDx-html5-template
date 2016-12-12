@@ -4,7 +4,7 @@ var gutil = require('gulp-util');
 var del = require('del');
 var uglify = require('gulp-uglify');
 var gulpif = require('gulp-if');
-let exec = require('gulp-exec');
+var exec = require('gulp-exec');
 
 
 var notify = require('gulp-notify');
@@ -40,9 +40,9 @@ var watch = argv._.length ? argv._[0] === 'watch' : true;
 // ----------------------------
 // Error notification methods
 // ----------------------------
-let beep = function() {
-    let os = require('os');
-    let error = gulp.src('path/error.wav');
+var beep = function() {
+    var os = require('os');
+    var error = gulp.src('path/error.wav');
     if (os.platform() === 'linux') {
         error.pipe(exec('aplay <%= file.path %>'));
     } else {

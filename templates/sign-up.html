@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>TEDx Paderewski International School</title>
+    <title>TEDx Paderewski International School - Zapisz się na wydarzenie!</title>
 
     <link href="https://pa.tedcdn.com/favicon.ico" rel="shortcut icon" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/tedx_new.css">
 
     <!-- FONTS -->
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700" rel="stylesheet">
   </head>
   <body>
@@ -34,20 +38,41 @@
             <a class="nav-link" href="#">Prelegenci</a>
         </li>
         </ul>
+        <form class="form-inline float-lg-right">
+        <button class="btn btn-outline-success" type="submit">Zapisz się na wydarzenie!</button>
+        </form>
     </div>
     </nav>
     <div id="main-content" class="container">
-       <div class="header">
-           <h1>TEDxPaderewskiIntlSchool: The power of a thought</h1>
-           <h2>Sobota, Kwiecień 19, 2017, 12 - 4 PM</h2>
-           <h2>Międzynarodowe Liceum Paderewski w Lublinie</h2>
-       </div>
-       <div class="photo">
-           <img src="assets/img/bg/sdf.png">
-       </div>
-       <div class="buttons">
-           <a href="#" class="btn">Zapisz się na wydarzenie</a>
-           <a href="#" class="btn">Informacje o evencie</a>
+       <div id="sign-up-form">
+           <h2>Formularz zgłoszeniowy</h2>
+           <div class="alert alert-success" role="alert">
+               <strong>Sukces!</strong> W celu potwierdzenia uczestnictwa w wydarzeniu, kliknij w link, który znajdziesz w wiadomości e-mail, którą do ciebie wysłaliśmy.
+           </div>
+           <div class="alert alert-danger" role="alert">
+               <strong>Coś poszło nie tak!</strong> Odświerz stronę i spróbuj jeszcze raz.
+           </div>
+           <form>
+               <div class="form-group">
+                   <label for="name">Imię</label>
+                   <input type="text" class="form-control" id="name" placeholder="Podaj swoje imię">
+               </div>
+               <div class="form-group">
+                   <label for="last-name">Nazwisko</label>
+                   <input type="text" class="form-control" id="last-name" placeholder="Podaj swoje nazwisko">
+               </div>
+               <div class="form-group">
+                   <label for="email">E-mail</label>
+                   <input type="email" class="form-control" placeholder="Podaj swój adres e-mail">
+                   <small class="form-text text-muted">Nie będziemy wysyłać ci SPAM-u ;-)</small>
+               </div>
+               <label class="custom-control custom-checkbox">
+                   <input type="checkbox" class="custom-control-input">
+                   <span class="custom-control-indicator"></span>
+                   <span class="custom-control-description">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rejetracji na wydarzenie (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; (tekst jednolity: Dz. U. 2016 r. poz. 922). </span>
+               </label>
+               <button type="button" class="btn">Zgłoś mój udział</button>
+           </form>
        </div>
     </div>
     <footer>
